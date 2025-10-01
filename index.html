@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Status Calculator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <table id="table">
+        <caption>Registered Students</caption>
+        <tr>
+            <th>S/N</th>
+            <th>Student Name</th>
+            <th>Assignment 1</th>
+            <th>Assignment 2</th>
+            <th>Final Exam Score</th>
+            <th>Total Score</th>
+            <th>Remark</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Alice</td>
+            <td>23</td>
+            <td>45</td>
+            <td>65</td>
+            <td>99</td>
+            <td>Excellent!</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Daniel</td>
+            <td>35</td>
+            <td>32</td>
+            <td>34</td>
+            <td>38.5</td>
+            <td>Fail</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>John</td>
+            <td>22</td>
+            <td>23</td>
+            <td>53</td>
+            <td>75.5</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ada</td>
+            <td>50</td>
+            <td>22</td>
+            <td>43</td>
+            <td>79</td>
+            <td>Pass</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td id="Student-Name"></td>
+            <td id="Ass-1-text-field"></td>
+            <td id="Ass-2-text-field"></td>
+            <td id="Final-exam-score"></td>
+            <td id="student-overall-score"></td>
+            <td id="remark_text_field"></td>
+        </tr>
+
+    </table>
+    <form>
+        <label for="name-of-student">Student's Name</label>
+        <input type="text" id="name-of-student"><br />
+        <label for="Ass-1">First Assignment Score</label>
+        <input type="number" max="50" min="0" id="Ass-1"><br />
+        <label for="Ass-2">Second Assignment Score</label>
+        <input type="number" max="50" min="0" id="Ass-2"><br />
+        <label for="Exam-Score">Exam Score</label>
+        <input type="text" id="Exam-Score"><br />
+        <button type="button" id="btn">Submit</button>
+
+        <p>Extra student info here! ⬇️</p>
+        <p id="extra-info"></p>
+    </form>
+
+    <!-- Don't forget css! -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
