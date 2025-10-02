@@ -22,11 +22,14 @@ button.addEventListener("click", function () {
     // Logic and shii ;)
 
     let ass_average = (Ass_1 + Ass_2) / 2;
-    let overall_score = parseFloat((ass_average * 0.4) + (Exam_Score * 0.6).toFixed);
+    let overall_score = (ass_average * 0.4) + (Exam_Score * 0.6);
+
 
     // Checking for a valid name
+
     if (Student_Name.trim() === "" || !isNaN(Student_Name)) {
         extra_info.textContent = "Enter a valid name!";
+        console.log("Enter a valid name!")
         return;
     }
 
@@ -40,6 +43,7 @@ button.addEventListener("click", function () {
         let Is_Excellent = (Student_Name + " is excellent with a score of " + overall_score);
         extra_info.textContent = Is_Excellent;
         remarks.textContent = "Excellent"
+        console.log(Is_Excellent)
     }
     // Smart guys who pass :)
 
@@ -47,6 +51,7 @@ button.addEventListener("click", function () {
         let student_has_passed = (Student_Name + "passed with a score of" + overall_score);
         extra_info.textContent = student_has_passed;
         remarks.textContent = "Pass"
+        console.log(student_has_passed)
     }
 
     // Failures Section :)
@@ -55,6 +60,7 @@ button.addEventListener("click", function () {
         let student_is_a_failure = (Student_Name + " failed with a score of " + overall_score);
         extra_info.textContent = student_is_a_failure;
         remarks.textContent = "Fail"
+        console.log(student_is_a_failure)
     }
 
     // Updating the table

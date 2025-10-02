@@ -10,7 +10,7 @@
 
 <body>
 
-    <table id="table">
+    <table border="12px" id="table">
         <caption>Registered Students</caption>
         <tr>
             <th>S/N</th>
@@ -27,17 +27,17 @@
             <td>23</td>
             <td>45</td>
             <td>65</td>
-            <td>99</td>
-            <td>Excellent!</td>
+            <td>57.5</td>
+            <td>Fail</td>
         </tr>
         <tr>
             <td>2</td>
             <td>Daniel</td>
-            <td>35</td>
-            <td>32</td>
-            <td>34</td>
-            <td>38.5</td>
-            <td>Fail</td>
+            <td>40</td>
+            <td>45</td>
+            <td>63</td>
+            <td>92</td>
+            <td>Excellent!</td>
         </tr>
         <tr>
             <td>3</td>
@@ -69,18 +69,23 @@
 
     </table>
     <form>
-        <label for="name-of-student">Student's Name</label>
-        <input type="text" id="name-of-student"><br />
-        <label for="Ass-1">First Assignment Score</label>
-        <input type="number" max="50" min="0" id="Ass-1"><br />
-        <label for="Ass-2">Second Assignment Score</label>
-        <input type="number" max="50" min="0" id="Ass-2"><br />
-        <label for="Exam-Score">Exam Score</label>
-        <input type="text" id="Exam-Score"><br />
-        <button type="button" id="btn">Submit</button>
+        <div>
+            <label for="name-of-student">Student's Name</label>
+            <input type="text" id="name-of-student" placeholder="Enter name "><br />
+            <label for="Ass-1">First Assignment Score</label>
+            <input type="number" min="0" id="Ass-1" placeholder="First assignment score"><br />
+            <label for="Ass-2">Second Assignment Score</label>
+            <input type="number" min="0" id="Ass-2" placeholder="Second assignment score"><br />
+            <label for="Exam-Score">Exam Score</label>
+            <input type="text" id="Exam-Score" placeholder="Enter exam score"><br />
 
-        <p>Extra student info here! ⬇️</p>
-        <p id="extra-info"></p>
+        </div>
+        <div class="div-2">
+            <button type="button" id="btn">Submit</button>
+            <p>Extra remarks on student performance will be displayed here ⬇️</p>
+            <p id="extra-info"></p>
+        </div>
+
     </form>
 
     <!-- Don't forget css! -->
