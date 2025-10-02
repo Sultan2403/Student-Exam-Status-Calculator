@@ -40,16 +40,18 @@ button.addEventListener("click", function () {
     // Special case for eggxellent students :);
 
     else if (overall_score >= 90) {
-        let Is_Excellent = (Student_Name + " is excellent with a score of " + overall_score);
+        let Is_Excellent = `${Student_Name} is excellent with a score of ${overall_score}`;
         extra_info.textContent = Is_Excellent;
+        extra_info.style.color = "green"
         remarks.textContent = "Excellent"
         console.log(Is_Excellent)
     }
     // Smart guys who pass :)
 
     else if (overall_score >= 70) {
-        let student_has_passed = (Student_Name + "passed with a score of" + overall_score);
+        let student_has_passed = `${Student_Name} passed with a score of ${overall_score}`;
         extra_info.textContent = student_has_passed;
+        extra_info.style.color = "orange"
         remarks.textContent = "Pass"
         console.log(student_has_passed)
     }
@@ -57,8 +59,9 @@ button.addEventListener("click", function () {
     // Failures Section :)
 
     else if (overall_score < 70) {
-        let student_is_a_failure = (Student_Name + " failed with a score of " + overall_score);
+        let student_is_a_failure = `${Student_Name} failed with a score of ${overall_score}`;
         extra_info.textContent = student_is_a_failure;
+        extra_info.style.color = "red"
         remarks.textContent = "Fail"
         console.log(student_is_a_failure)
     }
