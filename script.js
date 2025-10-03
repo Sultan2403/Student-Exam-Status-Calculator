@@ -22,7 +22,7 @@ button.addEventListener("click", function () {
     // Logic and shii ;)
 
     let ass_average = (Ass_1 + Ass_2) / 2;
-    let overall_score = ((ass_average * 0.4) + (Exam_Score * 0.6)) * 100;
+    let overall_score = (ass_average * 0.4) + (Exam_Score * 0.6);
 
 
     // Checking for a valid name
